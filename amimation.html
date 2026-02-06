@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes ping {
+            from{
+                left: 0;
+            }
+            to{
+                left: 400px;
+                background-color: red;
+            }
+        }
+        @keyframes new {
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 100px;
+                top: 200px;
+                background-color: red;
+            }
+            50%{
+                left: 200px;
+                top: 0px;
+                background-color: black;
+            }
+            75%{
+                left: 300px;
+                top: 200px;
+            }
+            100%{
+                left: 400px;
+                top: 0px;
+            }
+        }
+    
+            
+        
         .stage{
             width: 500px;
             height: 300px;
@@ -16,7 +52,11 @@
             height: 100px;
             background-color: yellow;
             border-radius: 50%;
+            position: relative;
+            /* animation: ping 2s ease-in-out 1s infinite alternate-reverse; */
+            animation: new 1s ease-in-out 1s infinite alternate-reverse ;
         }
+        
     </style>
 </head>
 <body>
